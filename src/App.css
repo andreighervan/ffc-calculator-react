@@ -1,32 +1,73 @@
-.App {
-  text-align: center;
+/*button panel*/
+
+.component-button-panel {
+  background-color: #858694;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 0 auto;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.component-button-panel > div {
+  width: 100%;
+  margin-bottom: 1px;
+  flex: 1 0 auto;
+  display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*app*/
+
+.component-app {
+  width: 200px;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+/*button */
+
+.component-button {
+  display: inline-flex;
+  width: 25%;
+  flex: 1 0 auto;
+}
+
+.component-button.wide {
+  width: 50%;
+}
+
+.component-button button {
+  background-color: #e0e0e0;
+  border: 0;
+  font-size: 1.5rem;
+  margin: 0 1px 0 0;
+  flex: 1 0 auto;
+  padding: 0;
+}
+
+.component-button:last-child button {
+  margin-right: 0;
+}
+
+.component-button.orange button {
+  background-color: #f5923e;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* diaplay*/
+.component-display {
+background-color: #858694;
+color: white;
+text-align: right;
+font-weight: 200;
+flex: 0 0 auto;
+width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.component-display > div {
+  font-size: 2.5rem;
+  padding: 0.2rem 0.7rem 0.1rem 0.5rem;
 }
+
